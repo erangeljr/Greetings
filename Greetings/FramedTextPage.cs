@@ -8,16 +8,21 @@ namespace Greetings
 	{
 		public FramedTextPage ()
 		{
+			BackgroundColor = Color.Aqua;
+
 			Padding = new Thickness(20); 
 			Content = new Frame 
 			{ 
-				OutlineColor = Color.Accent, 
+				OutlineColor = Color.Black,
+				BackgroundColor = Color.Yellow, 
 				HorizontalOptions = LayoutOptions.Center, 
 				VerticalOptions = LayoutOptions.Center, 
 				Content = new Label 
 				{ 
 					Text = "I've been framed!", 
-					FontSize = Device.GetNamedSize(NamedSize.Large, typeof(Label)) 
+					FontSize = Device.GetNamedSize(NamedSize.Large, typeof(Label)),
+					FontAttributes = FontAttributes.Italic,
+					TextColor = Color.Blue
 
 				} 
 			};

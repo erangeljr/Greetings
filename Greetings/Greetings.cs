@@ -9,7 +9,7 @@ namespace Greetings
 		public App ()
 		{
 			// The root page of your application
-			MainPage = new FramedTextPage();
+			MainPage = new SizedBoxViewPage();
 		}
 
 		protected override void OnStart ()
